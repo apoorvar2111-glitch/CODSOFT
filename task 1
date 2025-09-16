@@ -1,0 +1,10 @@
+CODSOFT/
+│
+├── Task 1 - Chatbot with Rule-Based Responses/
+│   ├── README.md
+│   ├── code/
+│   │   └── chatbot.py
+│   └── outputs/
+│       └── sample_run.png
+│
+└── README.md
