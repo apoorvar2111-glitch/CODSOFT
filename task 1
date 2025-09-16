@@ -1,10 +1,27 @@
-CODSOFT/
-│
-├── Task 1 - Chatbot with Rule-Based Responses/
-│   ├── README.md
-│   ├── code/
-│   │   └── chatbot.py
-│   └── outputs/
-│       └── sample_run.png
-│
-└── README.md
+
+# Task 1: Chatbot with Rule-Based Responses
+
+import datetime
+
+def chatbot():
+    print("Chatbot: Hello! I am a simple rule-based chatbot. Type 'bye' to exit.")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if user_input in ["hi", "hello", "hey"]:
+            print("Chatbot: Hello! How can I help you today?")
+        elif "name" in user_input:
+            print("Chatbot: I am a simple rule-based chatbot created for CODSOFT internship.")
+        elif "time" in user_input:
+            print("Chatbot:", datetime.datetime.now().strftime("%H:%M:%S"))
+        elif "date" in user_input:
+            print("Chatbot:", datetime.datetime.now().strftime("%Y-%m-%d"))
+        elif "bye" in user_input:
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        else:
+            print("Chatbot: Sorry, I don't understand that. Can you rephrase?")
+
+if __name__ == "__main__":
+    chatbot()
